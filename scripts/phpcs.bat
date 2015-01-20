@@ -1,9 +1,9 @@
 @echo off
 REM PHP_CodeSniffer tokenizes PHP code and detects violations of a
 REM defined set of coding standards.
-REM 
+REM
 REM PHP version 5
-REM 
+REM
 REM @category  PHP
 REM @package   PHP_CodeSniffer
 REM @author    Greg Sherwood <gsherwood@squiz.net>
@@ -18,4 +18,4 @@ GOTO RUN
 :USE_PEAR_PATH
 set PHPBIN=%PHP_PEAR_PHP_BIN%
 :RUN
-"%PHPBIN%" "@bin_dir@\phpcs" %*
+"%PHPBIN%" "%~dp0\phpcs" %* --tab-width=4
